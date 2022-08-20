@@ -24,12 +24,13 @@ app.post("/", function (req, res) {
             }
         }]
     })
+    console.log(req.body.email+"  "+req.body.fname+"  "+req.body.lname)
     // option for authe and api connection
     const options = {
         url: "https://us10.api.mailchimp.com/3.0/lists/b4a04b557f",
         method: "POST",
         headers: {
-            Authorization: "india 694abe43c66a086b37853fb97a5e8ff8"
+            Authorization: "india 694abe43c66a086b37853fb97a5e8ff8-us10"
         },
         body: data
     }
